@@ -48,5 +48,6 @@ func main() {
     w.Header().Set("Content-Type", "application/json; charset=utf-8")
     json.NewEncoder(w).Encode(data)
   })
+
   http.ListenAndServe(":8080", nil)
 }
